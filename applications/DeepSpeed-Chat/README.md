@@ -121,7 +121,7 @@ Please check out our [Blog Release](https://github.com/microsoft/DeepSpeed/tree/
 pip install deepspeed==0.10.3
 
 git clone https://github.com/CYH4157/DSChat.git
-cd DeepSpeedExamples/applications/DeepSpeed-Chat/
+cd DSChat/applications/DeepSpeed-Chat/
 pip install -r requirements.txt
 pip install -e .
 ```
