@@ -5,5 +5,5 @@
 # DeepSpeed Team
 
 # Add the path to the finetuned model
-python  rw_eval.py \
-    --model_name_or_path
+python3  rw_eval.py \
+    --model_name_or_path '/work/cyh_deepspeed/DeepSpeedExamples/applications/DeepSpeed-Chat/training/step2_reward_model_finetuning/output/'
