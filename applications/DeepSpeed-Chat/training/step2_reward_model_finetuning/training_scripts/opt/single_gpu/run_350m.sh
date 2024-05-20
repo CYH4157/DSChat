@@ -15,6 +15,10 @@ mkdir -p $OUTPUT
 
 deepspeed --num_gpus 1 main.py --model_name_or_path facebook/opt-350m \
    --num_padding_at_beginning 1 --weight_decay 0.1 --dropout 0.0 --gradient_accumulation_steps 4 --zero_stage $ZERO_STAGE \
+   --per_device_train_batch_size 2 \
+   --per_device_eval_batch_size 2 \
+   --enable_tensorboard \
+   --gradient_checkpointing \
    --enable_tensorboard \
    --tensorboard_path $OUTPUT \
    --deepspeed --output_dir $OUTPUT &> $OUTPUT/training.log
