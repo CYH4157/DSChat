@@ -1,10 +1,14 @@
 #!/bin/bash
 # Copyright (c) Microsoft Corporation.
 # SPDX-License-Identifier: Apache-2.0
+export DS_SKIP_CUDA_CHECK=1
 
 # DeepSpeed Team
-ACTOR_MODEL_PATH=$1
-CRITIC_MODEL_PATH=$2
+#ACTOR_MODEL_PATH=$1
+#CRITIC_MODEL_PATH=$2
+ACTOR_MODEL_PATH=/work/cyh_deepspeed/DeepSpeedExamples/applications/DeepSpeed-Chat/training/step1_supervised_finetuning/output/
+CRITIC_MODEL_PATH=/work/cyh_deepspeed/DeepSpeedExamples/applications/DeepSpeed-Chat/training/step2_reward_model_finetuning/output/
+
 ACTOR_ZERO_STAGE=$3
 CRITIC_ZERO_STAGE=$4
 OUTPUT=$5
