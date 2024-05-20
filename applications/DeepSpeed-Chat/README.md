@@ -118,7 +118,7 @@ Please check out our [Blog Release](https://github.com/microsoft/DeepSpeed/tree/
 
 
 ```bash
-pip install deepspeed>=0.9.0
+pip install deepspeed==0.10.3
 
 git clone https://github.com/microsoft/DeepSpeedExamples.git
 cd DeepSpeedExamples/applications/DeepSpeed-Chat/
