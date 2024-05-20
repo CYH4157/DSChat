@@ -120,7 +120,7 @@ Please check out our [Blog Release](https://github.com/microsoft/DeepSpeed/tree/
 ```bash
 pip install deepspeed==0.10.3
 
-git clone https://github.com/microsoft/DeepSpeedExamples.git
+git clone https://github.com/CYH4157/DSChat.git
 cd DeepSpeedExamples/applications/DeepSpeed-Chat/
 pip install -r requirements.txt
 pip install -e .
